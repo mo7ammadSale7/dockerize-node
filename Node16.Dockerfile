@@ -1,5 +1,9 @@
-# First stage base image
-FROM node:lts-slim as build
+FROM node:16-alpine3.14
+
+EXPOSE 3000
+
+WORKDIR /app
+
 RUN mkdir -p /app
 
 WORKDIR /app
